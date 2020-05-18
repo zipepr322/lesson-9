@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Inria+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="container header-flex-container">
+                <div class="logo-container">
+                    <div class="logo-sign">
+                        <div class="logo-quotes">&rdquo;</div>
+                    </div>
+                    <span class="logo-text">Prechu</span>
+                </div>
+                <div class="menu-container">
+                    <ul class="menu">
+                        <li class="menu-item active">
+                            <a href="#">home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">products</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">services</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="main-content">
+            <section class="banner">
+                <div class="container vertical_banner">
+                    <div class="iphone-container"></div>
+                    <div class="sign-up-container">
+                        <h1>Lorem Ipsum is simply</h1>
+                        <p class="main-content-text">dummy text of the</p>
+                        <p class="main-content-text">of the printing and typesetting</p>
+                        <div class="sign-in-button_container">
+                            <button class="sign-in-button"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="products">
+                <div class="container products_vertical">
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="./images/left_circle.png" alt="Pencil">
+                        </div>
+                        <div class="product-name">
+                            <span class="circle_header">Product 1</span>
+                        </div>
+                        <div class="product-description">
+                            <p class="circle_discription">Lorem Ipsum is not simply random text. It has roots in a piece </p>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="./images/middle_circle.png" alt="Home">
+                        </div>
+                        <div class="product-name">
+                            <span class="circle_header">Product 2</span>
+                        </div>
+                        <div class="product-description">
+                            <p class="circle_discription">Lorem Ipsum is not simply random text. It has roots in a piece </p>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="./images/right_circle.png" alt="Basket">
+                        </div>
+                        <div class="product-name">
+                            <span class="circle_header">Product 3</span>
+                        </div>
+                        <div class="product-description">
+                            <p class="circle_discription">Lorem Ipsum is not simply random text. It has roots in a piece </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cart">
+                <div class="container">
+                    <div class="shopping-cart">
+                        <h3 class="cart-header">The Shopping cart</h3>
+                        <div class="shopping-cart-image"></div>
+                    </div>
+                    <div class="cart-info">
+                        <h4 class="cart-text-header">Some header here</h4>
+                        <p class="cart-info-text">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                        <p class="cart-info-text">Lorem Ipsum has been the industry's standard dummy text ever</p>
+                        <p class="cart-info-text">When an unknown printer took a galley of type and scrambled </p>
+                        <p class="cart-info-text">It to make a type specimen book. It has survived not only five centuries</p>
+                        <p class="cart-info-text">But also the leap into electronic typesetting,</p>
+                        <p class="cart-info-text">Remaining essentially unchanged. It was popularised</p>
+                        <p class="cart-info-text">The release of Letraset sheets containing Lorem Ipsum passages</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="copyright">
+                <span class="footer-description"> Copyright &copy; <span class="current-year footer-description"></span>Hillel</span>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector(".current-year").textContent = new Date().getFullYear();
+        })
+    </script>
+</body>
+</html>

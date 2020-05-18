@@ -1,0 +1,504 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    margin: 0;
+    font-family: 'Inria Sans', sans-serif;
+}
+
+a {
+    color: #6c6c6c;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 32px;
+    color: #ffffff;
+
+}
+.main-content-text {
+    font-size: 24px;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 25px;
+    width: 75%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header {
+    background-color: #fff;
+    height: 90px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header-flex-container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    line-height: 46px;
+    margin-left: 40px;
+ }
+
+.logo-sign {
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+    background-color: #5094f2;
+    justify-content: center;
+}
+
+.logo-quotes {
+    display: block;
+    text-align: center;
+    font-size: 65px;
+    color: #ffffff;
+    line-height: 70px;
+}
+
+.logo-text {
+    font-size: 42px;
+    margin-left: 15px;
+}
+
+.main-content {
+    padding-top: 90px;
+}
+
+.menu-container {
+    margin-right: 40px;
+}
+
+.menu {
+    display: flex;
+    height: 100%;
+}
+
+.menu-item {
+    align-items: center;
+    border-bottom: 2px solid transparent;
+    display: flex;
+    padding: 0 10px;
+}
+
+/*.menu-item.active, */
+.menu-item:hover {
+    border-color: #5094f2;
+}
+
+.menu-item a {
+    display: block;
+    height: 100%;
+    line-height: 90px;
+}
+.banner {
+    width: 100%;
+    background-image: url("./images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.sign-in-button {
+    background-image: url("./images/button.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    width: 172px;
+    height: 41px;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+.iphone-container {
+    background-image: url("./images/iphone.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 348px;
+    height: 416px;
+    margin: 20px 0;
+}
+
+.product-image {
+    height: 190px;
+    width: 190px;
+    margin-top: 57px;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle_discription {
+    color: #909090;
+    font-size: 14px;
+    width: 250px;
+    text-align: center;
+
+}
+
+.circle_header{
+    color: #5094f2;
+    font-size: 20px;
+}
+
+.cart {
+    margin-bottom: 60px;
+}
+
+.shopping-cart-image {
+    background-image: url("./images/cart.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 355px;
+    height: 270px;
+}
+
+.cart-header {
+    color: #6f7173;
+    font-size: 42px;
+    margin-bottom: 32px;
+}
+
+.cart-text-header {
+    color: #6f7173;
+    font-size: 26px;
+    margin: 90px 0 35px 0;
+}
+
+.cart-info-text {
+    color: #6f7173;
+    font-size: 15px;
+    line-height: 36px;
+    margin: 0;
+}
+
+.copyright {
+    margin: 0 0 36px 0;
+    text-align: center;
+    border-top: 1px solid #909090;
+    padding-top: 36px;
+}
+
+.footer-description {
+    font-size: 15px;
+    color: #909090;
+}
+/*------------------ИЗМЕНЕНИЯ РАЗМЕРОВ ПОД Iphone 6.7.8  375x667---------------------*/
+
+@media screen and (max-width: 375px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .container {
+        width: 375px;
+    }
+
+    .header {
+        width: 375px;
+    }
+
+    .header-flex-container {
+        flex-direction: column;
+    }
+
+    .logo-container {
+        width: 100%;
+        justify-content: center;
+        padding: 10px 0 10px 0;
+        margin: 0;
+    }
+
+    .menu-container{
+        margin: 0;
+    }
+
+    li {
+        font-size: 22px;
+    }
+
+    .menu-item {
+        border: none;
+    }
+
+    .menu-item a {
+        line-height: normal;
+    }
+
+    .banner {
+        margin-top: 12px;
+    }
+
+    .vertical_banner {
+        flex-direction: column;
+    }
+
+    .main-content-text {
+        margin: 0;
+    }
+
+    .sign-in-button_container {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0 20px 0;
+    }
+
+    .products_vertical {
+        flex-direction: column;
+    }
+
+    .cart-info {
+        display: none;
+    }
+
+    .cart {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .cart-header {
+        font-size: 32px;
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media screen and (max-width: 375px) {*/
+/*    .header {*/
+/*        height: auto;*/
+/*    }*/
+
+/*    .container {*/
+/*        margin: 0;*/
+/*        padding: 0;*/
+/*        width: 375px;*/
+/*        height: 100%;*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        justify-content: center;*/
+/*        align-items: center;*/
+/*    }*/
+
+/*    !*.header-flex-container {*!*/
+/*    !*    flex-direction: column;*!*/
+/*    !*    align-items: ;*!*/
+/*    !*}*!*/
+
+/*    .menu-container {*/
+/*        margin: 0;*/
+/*        width: 56%;*/
+/*    }*/
+
+/*    .logo-container {*/
+/*        margin: 0 40px 0 0;*/
+/*        line-height: 28px;*/
+/*        align-items: center;*/
+/*    }*/
+
+/*    .logo-text {*/
+/*        margin: 0;*/
+/*        font-size: 24px;*/
+/*    }*/
+
+/*    .logo-sign {*/
+/*        height: 24px;*/
+/*        width: 24px;*/
+/*        margin: 0 10px;*/
+/*    }*/
+
+/*    .logo-quotes {*/
+/*        font-size: 30px;*/
+/*        line-height: 35px;*/
+/*    }*/
+
+/*    .menu-item {*/
+/*        font-size: 12px;*/
+/*        padding: 0 3px;*/
+/*    }*/
+
+/*    .menu:last-child {*/
+/*        margin-right: 3%;*/
+/*    }*/
+
+/*    .menu-item a {*/
+/*        line-height: 28px;*/
+/*    }*/
+
+/*!*---------------------MAIN CONTENT-------------------*!*/
+/*!*--------------------Banner--------------------------*!*/
+
+/*    .main-content {*/
+/*        padding-top: 0;*/
+/*        !*width: 100%;*!*/
+/*    }*/
+
+/*    .iphone-container {*/
+/*        width: 116px;*/
+/*        height: 140px;*/
+/*        margin: 34px 0 3px 0;*/
+
+/*    }*/
+
+/*    .sign-up-container {*/
+/*        margin: 25px 15px 0 0;*/
+/*    }*/
+
+/*    .sign-in-button {*/
+/*        width: 57px;*/
+/*        height: 14px;*/
+/*    }*/
+
+/*    h1 {*/
+/*        font-size: 10px;*/
+/*    }*/
+
+/*    .banner {*/
+/*        width: 375px;*/
+/*    }*/
+
+/*    .main-content-text {*/
+/*        font-size: 8px;*/
+/*        margin-top: 0;*/
+/*    }*/
+/*!*--------------------------Product Container----------------*!*/
+/*    .product-image {*/
+/*        width: 70px;*/
+/*        height: 70px;*/
+/*        margin-top: 15px;*/
+/*    }*/
+
+/*    .product-item {*/
+/*        align-items: baseline;*/
+/*    }*/
+
+/*    img {*/
+/*        width: 70px;*/
+/*        height: 70px;*/
+/*    }*/
+
+/*    .circle_header {*/
+/*        font-size: 8px;*/
+/*    }*/
+
+/*    .circle_discription {*/
+/*        font-size: 5px;*/
+/*        width: 65px;*/
+/*    }*/
+
+/*        .product-name {*/
+/*         margin: 0 auto;*/
+/*        }*/
+
+/*!*--------------------------Cart Section--------------------------------*!*/
+/*        .cart-header {*/
+/*            font-size: 14px;*/
+/*        }*/
+
+/*        .shopping-cart-image {*/
+/*            width: 126px;*/
+/*            height: 96px;*/
+/*        }*/
+
+/*        .cart-text-header {*/
+/*            font-size: 10px;*/
+/*            margin: 30px 0 28px 0;*/
+
+/*        }*/
+
+/*        .cart-info-text {*/
+/*            font-size: 5px;*/
+/*            line-height: 10px;*/
+/*            width: 150px;*/
+/*        }*/
+/*!*----------------------------Footer Section------------------------------*!*/
+/*        .footer-description {*/
+/*            font-size: 5px;*/
+/*        }*/
+
+/*        .copyright {*/
+/*            margin: 0;*/
+/*            padding: 0;*/
+/*        }*/
+
+/*        .main-content {*/
+/*            height: 95vh;*/
+/*        }*/
+
+
+/*        !*.page {*!*/
+/*        !*    display: flex;*!*/
+/*        !*    flex-direction: column;*!*/
+/*        !*}*!*/
+
+/*        !*.main-content {*!*/
+/*        !*    flex: 1 0 auto;*!*/
+/*        !*}*!*/
+
+/*        !*.footer {*!*/
+/*        !*    flex: 0 0 auto;*!*/
+/*        !*}*!*/
+/*}*/
